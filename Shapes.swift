@@ -10,14 +10,23 @@ import SwiftUI
 
 struct Shapes: View {
     var body: some View {
-        VStack  {
-           Circle()
+        ZStack {
+            Circle()
+            Rectangle()
+            Ellipse()
+        Capsule(style: .continuous)
+            Capsule(style: .circular)
+            RoundedRectangle(cornerRadius: 50)
+                
+            
+            
+            
         }
     }
 }
 
-    
 
-    
+
+
 
 
