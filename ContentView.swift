@@ -2,22 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationView {
-            VStack(spacing: 20) {
-                // Your existing content here
-                
-                NavigationLink(destination: Shapes()) {
-                    Text("Go to Shapes")
-                        .font(.system(size: 24))
-                        .foregroundColor(.white)
-                        .frame(width: 200, height: 50)
-                        .background(Color.blue)
-                        .cornerRadius(10)
-                }
-                .padding()
-            }
-            .navigationBarTitle("Calculator")
-        }
+        
         
         
         
