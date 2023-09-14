@@ -16,36 +16,27 @@ struct OpeningView: View {
                     Text("Go to Shapes")
                         .font(.system(size: 24))
                         .foregroundColor(.white)
-                        .frame(width: 200, height: 50)
+                        .frame(width: 150, height: 70)
                         .background(Color.blue)
                         .cornerRadius(10)
+                    
+                    NavigationLink(destination: ContentView()) {
+                        Text("Go to Calculator")
+                            .font(.system(size: 24))
+                            .foregroundColor(.white)
+                            .frame(width: 150, height: 70)
+                            .background(Color.blue)
+                            .cornerRadius(10)
+                    }
+                    
+                    .padding()
+                    .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: UIScreen.main.bounds.width)
                 }
-                .padding()
-                .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: UIScreen.main.bounds.width)
+                .navigationBarTitle("Shapes or Calculator")
             }
-            .navigationBarTitle("Shapes")
+            
+            
         }
-        
-        NavigationView {
-            VStack(spacing: 20) {
-                
-                NavigationLink(destination: ContentView()) {
-                    Text("Go to Calculator")
-                        .font(.system(size: 24))
-                        .foregroundColor(.white)
-                        .frame(width: 200, height: 50)
-                        .background(Color.blue)
-                        .cornerRadius(10)
-                }
-                
-                .padding()
-                .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: UIScreen.main.bounds.width)
-            }
-            .navigationBarTitle("Calculator")
-        }
-        
-        
     }
-    
     
 }
